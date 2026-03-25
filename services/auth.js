@@ -6,7 +6,7 @@ class AuthService {
   // Hash password with salt
   static generateHash(salt, password) {
     return createHmac("sha256", salt).update(password).digest("hex");
-  }.
+  }
 
   // Generate salt for password hashing
   static generateSalt() {
