@@ -11,7 +11,7 @@ const kycSchema = new mongoose.Schema(
     },
     userId: {
       type: String, // This references the User model
-      required: true,
+      required: false,
     },
     nationality: {
       type: String,
