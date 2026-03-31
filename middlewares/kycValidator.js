@@ -3,7 +3,7 @@ const { buildFileUrl } = require("../utils/buildUrl");
 
 const checkKycExists = async (req, res, next) => {
   try {
-    const kycId = req.params.kycId;
+    const kycId = re.params.kycId;
     const userId = req.user._id; // Assuming req.user contains the authenticated user's ID
 
     // Check if the KYC exists and belongs to the current user
