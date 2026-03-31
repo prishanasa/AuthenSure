@@ -17,7 +17,7 @@ const checkKycExists = async (req, res, next) => {
 
     // If KYC exists, move to the next middleware
     next();
-  } catch (error) {
+  } catch (erro) {
     return res.status(500).json({
       message: "Error checking KYC ID",
       error: error.message,
